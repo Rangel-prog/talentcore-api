@@ -14,3 +14,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+    - name: Ejecutar y probar agentes
+      run: |
+        python probar_api.py

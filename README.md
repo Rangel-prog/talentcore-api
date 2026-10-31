@@ -6,6 +6,16 @@ Este repositorio contiene el código fuente de **Agente Recursos**, un sistema a
 
 El proyecto orquesta un conjunto de agentes especializados que simulan los roles de un equipo de desarrollo tecnológico. Mediante modelos de lenguaje de gran escala (LLM), integrados a través de la API de Groq, el sistema es capaz de analizar requisitos, diseñar la arquitectura, escribir código, realizar pruebas y preparar el entorno de despliegue de forma autónoma.
 
+## Demostración en línea
+
+El proyecto generado se encuentra desplegado en Render y puede probarse sin necesidad de instalación local:
+
+- **URL base de la API:** https://talentcore-api-r33n.onrender.com
+- **Documentación interactiva (Swagger UI):** https://talentcore-api-r33n.onrender.com/docs
+- **Documentación alternativa (ReDoc):** https://talentcore-api-r33n.onrender.com/redoc
+
+> **Nota:** el servicio se aloja en el plan gratuito de Render, por lo que puede entrar en suspensión tras un periodo de inactividad. La primera solicitud podría tardar entre 30 y 60 segundos en responder mientras el servicio se reactiva.
+
 ## Arquitectura del sistema
 
 El flujo de trabajo se divide en etapas secuenciales, cada una dirigida por un agente especializado:
@@ -24,6 +34,7 @@ El flujo de trabajo se divide en etapas secuenciales, cada una dirigida por un a
 - **Inteligencia artificial:** API de Groq
 - **Contenerización:** Docker y Docker Compose
 - **CI/CD:** GitHub Actions
+- **Despliegue:** Render
 - **Gestión de entornos:** `venv` y `python-dotenv`
 
 ## Estructura del directorio
